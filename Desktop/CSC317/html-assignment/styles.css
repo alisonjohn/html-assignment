@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding:0;
+    background-color: rgba(69, 45, 65, 0.563);
+    font-family:'Georrgia', Times, serif, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+header{
+padding: 45px;
+background-color: rgba(69, 45, 65, 0.563);
+color: white;
+font-size: 20px;
+text-align: center;
+}
+nav ul{
+    list-style: none;
+    color: white;
+    display:flex;
+    justify-content: center;
+}
+nav ul li{
+    padding: 15px;
+}
+nav ul li a{ 
+    color: white;
+} 
+main{
+    padding:30px;
+    color:rgba(66, 26, 103, 0.86); 
+    background-color: white;
+}
+p ,label{
+    color:rgba(66, 26, 103, 0.86);
+    font-size: 20px;
+}
+footer{
+    background-color: white;
+    color: rgba(66, 26, 103, 0.86);
+    font-size: 20px;
+    text-align: center;
+}
