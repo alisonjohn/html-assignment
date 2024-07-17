@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <link rel="stylesheet" href="styles.css"> 
+    <script defer src="registration.js"></script>
 </head>
 <body>
     <header> 
-        <h2>Registration Page<h2></h2>
+        <h2>Registration Page</h2>
         <nav> 
             <ul>
                 <li><a href="index.html">Home Page</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="registration.html">Regestration</a></li>
+                <li><a href="registration.html">Registration</a></li>
                 <li><a href="postvideo.html">Post video</a></li>
                 <li><a href="viewpost.html">View Post</a></li>
             </ul>
@@ -21,27 +22,31 @@
     </header> 
     <main>
         <section>
-            <form> 
+            <form id="registrationForm"> 
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
+                <div class="error-msg" id="usernameError"></div>
                 <br><br>
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
+                <div class="error-msg" id="emailError"></div>
                 <br><br>
                 <label for="password">Password</label> 
                 <input type="password" id="password" name="password" required>
+                <div class="error-msg" id="passwordError"></div>
                 <br><br>
                 <label for="confirm-password">Confirm Password</label> 
                 <input type="password" id="confirm-password" name="confirm-password" required>
+                <div class="error-msg" id="confirmPasswordError"></div>
                 <br><br>
                 <label>
-                <input type="checkbox" name="age" required> Check if you are 13+ years of age. 
+                    <input type="checkbox" name="age" required> Check if you are 13+ years of age. 
                 </label>
                 <br><br>
                 <label>
                     <input type="checkbox" name="tos" required> Accept <a href="#">TOS and Privacy Rules.</a> 
-                    </label>
-                    <br><br>
+                </label>
+                <br><br>
                 <button type="submit">Submit</button> 
             </form>
         </section>
